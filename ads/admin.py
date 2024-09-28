@@ -4,7 +4,7 @@ from django.contrib import admin
 from .models import Category, Ad
 
 class AdAdmin(admin.ModelAdmin):
-    list_display = ('title', 'id','ad_type', 'category', 'start_date', 'end_date', 'is_active')
+    list_display = ('title', 'id','ad_type', 'category','duration', 'start_date', 'end_date', 'is_active')
     list_filter = ('ad_type', 'category', 'is_active')
     search_fields = ('title',)
 
